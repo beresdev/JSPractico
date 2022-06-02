@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./figuras.js"></script>
+    <title>figuras geométricas</title>
+</head>
+<body>
+    <header>
+        <h1>Figuras geométricas</h1>
+        <h2>Taller 1 del curso práctico de JavaScript</h2>
+    </header>
+    <main>
+        <section>
+            <h3>Calcula el área y perimetro de un cuadrado</h3>
+            <form action="">
+                <label for="inputSideSquare">Ingresa la medida del lado: </label>
+                <input id="inputSideSquare" type="number" />
+                <button type="button" onclick="calculateSquarePerimeter()">Calcular el perimetro</button>
+                <button type="button" onclick="calculateSquareArea()">Calcular el área</button>
+            </form>
+        </section>
+        <section>
+            <h3>Calcula el área y perimetro de un triángulo isóceles</h3>
+            <form action="">
+                <label for="inputSideTriangle">Ingresa la medida de los lados iguales: </label>
+                <input id="inputSideTriangle" type="number" /><br>
+                <label for="inputBaseTriangle">Ingresa la medida de la base: </label>
+                <input id="inputBaseTriangle" type="number" /><br>
+                <label for="inputHeightTriangle">Ingresa la medida de la altura</label>
+                <input id="inputHeightTriangle" type="number"/><br>
+                <button type="button" onclick="calculateTrianglePerimeter()">Calcular el perimetro</button>
+                <button type="button" onclick="calculateTriangleArea()">Calcular el área</button>
+            </form>
+        </section>
+        <section>
+            <h3>Calcula la altura triángulo isóceles</h3>
+            <form action="">
+                <label for="inputSideATriangle">Ingresa la medida del lado A: </label>
+                <input id="inputSideATriangle" type="number" /><br>
+
+                <label for="inputBasTriangle">Ingresa la medida de la base: </label>
+                <input id="inputBasTriangle" type="number" /><br>
+
+                <label for="inputSideCTriangle">Ingresa la medida del lado C</label>
+                <input id="inputSideCTriangle" type="number"/><br>
+                <button type="button" onclick="calculateTriangleHeight()">Calcular altura</button>
+            </form>
+        </section>
+        <section>
+            <h3>Calcula el área y perimetro de un circulo</h3>
+            <form action="">
+                <label for="inputRatio">Ingresa la medida del radio: </label>
+                <input id="inputRatio" type="number" />
+                <button type="button" onclick="calculateCirclePerimeter()">Calcular el perimetro</button>
+                <button type="button" onclick="calculateCircleArea()">Calcular el área</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
